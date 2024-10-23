@@ -1,0 +1,176 @@
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0%;
+    padding: 0%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem ;
+    box-sizing: border-box; 
+}
+/* root values */
+:root{
+--container-color: #000000;
+--second-color: rgb(29, 47, 90);
+--text-color: #081086;
+--bg-color:#fdfdfd;
+}
+body{
+    background-color: #000000;
+    height: 900vh;
+    
+}
+::selection{
+    color: var(--bg-color);
+    background: var(--second-color);
+
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+img{
+    width: 100%;
+}
+ section{
+    padding: 3rem 0 2rem;
+ }
+
+.container{
+    max-width: 1068px;
+    margin: auto;
+    width: 100%
+}
+
+/* Header */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+}
+
+header.shadow{
+    background: var(--bg-color);
+    box-shadow: 0 1px 4px hsla(0, 7%, 13%, 0.1);
+    transition: .5s ;
+}
+header.shadow.logo{
+    color: var(--text-color);
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0 ;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(236, 236, 236);
+}
+
+.logo span{
+    color:var(--second-color);
+}
+.login{
+    padding: 8px 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 4px;
+    background: var(--second-color);
+    color: var(--bg-color);
+}
+
+.login:hover{
+    background: hsl(209, 83%, 46%);
+    transition: .5s;
+}
+
+.home{
+    width: 100%;
+    min-height: 500px;
+    background: url("../IMAGES/conspiracy.jpg");
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font: var(--text-color);
+}
+
+.home-text{
+color: rgb(104, 5, 5);
+text-align: center;
+}
+
+.home-title{
+font-size: 3.5rem;
+}
+
+.home-subtitle{
+font-size: 1rem;
+font-weight: 400;
+}
+
+.title{
+    font-size: 50px;
+    color: #bdbdbd;
+     text-align: center;
+     margin-top: 50px;
+}
+
+.about{
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+
+}
+
+
+
+.par1{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+h2{
+    color: #fdfdfd;
+}
+
+p{
+    color: #ffffff;
+}
+
+img{
+    width: 400px;
+    height: 200px;
+}
+ 
+h3{
+    color: #ffffff;
+}
+
+h1{
+    color: #ffffff;
+    text-align: center;
+}
+
+
+@media(max-width: 1060px){
+    .par1{
+        margin: 0 auto;
+        width: 95%;
+    }
+     
+
+    .body{
+        width: 100%;
+        height: 300vh;  
+    }
+}
